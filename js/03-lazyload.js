@@ -1,8 +1,6 @@
 import { otherGalleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(otherGalleryItems);
-
 const galleryContainer = document.querySelector('.gallery');
 const cardsMarkup = createImageCardsMarkup(otherGalleryItems);
 
