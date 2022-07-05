@@ -36,7 +36,8 @@ function onOpenCloseModal(event) {
     const instance = basicLightbox.create(`
     <img src="${event.target.dataset.source}" />
     `, {
-        onShow: () => {window.addEventListener('keydown', onEscKeyPress)}
+        onShow: () => { window.addEventListener('keydown', onEscKeyPress) },
+        onClose: () => { window.addEventListener('keydown', onEscKeyPress) }
     });
 
     instance.show();
